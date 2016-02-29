@@ -231,9 +231,9 @@ if __name__ == '__main__':
             win = True
             break
         for ghost in ghosts:
-        if int(ghost.x) == int(pacman.x) and int(ghost.y) == int(pacman.y):
-            win = False
-            break
+            if int(ghost.x) == int(pacman.x) and int(ghost.y) == int(pacman.y):
+                win = False
+                break
         pygame.display.update()
 
     if win == True:
