@@ -125,7 +125,7 @@ class Pacman(GameObject):
 
     def game_tick(self):
         super(Pacman, self).game_tick()
-
+        
         if self.checkwall(self.x, self.y, self.direction):
             self.direction = 0
         else:
